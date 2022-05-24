@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+    background-image: url("images/procrastinate.svg");
+    background-repeat: repeat;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/*TODO-LIST*/
+
+#display-todo {
+    margin: 40px 0px 40px 0px;
+    width: 40%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#display-todo > h1 {
+    text-align: center;
+}
+
+#todo-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#todo-list > li > p {
+    margin: 0;
+    display: inline;
+    overflow-wrap: break-word;
+}
+
+#todo-list > li > hr {
+    border: 0;
+    height: 1px;
+    background: black;
+}
+
+.delete-item {
+    cursor: pointer;
+    display: block;
+    float: right;
+    width: 25px;
+}
+
+/*FORM*/
+
+#todo-form {
+    width: 100%;
+    display: inline-block;
+}
+
+#todo-form > input[type=text] {
+    margin: 10px 0px 10px 0px;
+    padding: 12px 10px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1em;
+    width: calc(100% - 54px); /*Width 100% - size of button*/
+}
+
+#todo-form > input[type=submit] {
+    cursor: pointer;
+    margin: 10px 0px 10px 0px;
+    padding: 16px 10px;
+    background-color: black; 
+    color: white;
+    border-radius: 3px;
+    
+}
+
+
+/*FOOTER*/
+footer {
+    color: white;
+    position:fixed;
+    bottom: 10;
+    right: 10;
+}
+
+/*MEDIA QUIERIES*/
+
+/* Desktop */
+
+@media screen and (max-width: 1300px) {
+    #display-todo {
+        width: 50%;
+    }
+
+    footer {
+        position:absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 0;
+        right: none;
+    }
+}
+    
+/*Tablet*/
+
+@media screen and (max-width: 900px) {
+    #display-todo {
+        width: 60%;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 500px) {
+    #display-todo {
+        width: 70%;
+    }
+}
