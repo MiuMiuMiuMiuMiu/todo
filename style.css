@@ -1,8 +1,7 @@
 body {
     margin: 0;
     font-family: 'Heebo', sans-serif;
-    background-image: url("images/procrastinate.svg");
-    background-repeat: repeat;
+    background-color:lightblue;
 }
 
 #container {
@@ -18,7 +17,7 @@ body {
     width: 40%;
     background-color: white;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 #display-todo > h1 {
@@ -69,16 +68,15 @@ body {
     cursor: pointer;
     margin: 10px 0px 10px 0px;
     padding: 16px 10px;
-    background-color: black; 
+    background-color: palevioletred; 
     color: white;
-    border-radius: 3px;
-    
+    border-radius: 10px;
+    border-color: palevioletred;
 }
-
 
 /*FOOTER*/
 footer {
-    color: white;
+    color: black;
     position:fixed;
     bottom: 10;
     right: 10;
